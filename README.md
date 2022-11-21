@@ -16,13 +16,13 @@ for /F "tokens=1,2" %%i in ('tasklist /FI "IMAGENAME eq Terraria.exe" /fo table 
 
     Rem | Get the netstat for the Terraria PID.
     for /F "tokens=1,2" %%a in ('netstat -ano ^| find "%%j" ^| find "ESTABLISHED"') do (
-	
-	    Rem | Get only the port of the local TCP address.
+    
+        Rem | Get only the port of the local TCP address.
         for /F "delims=: tokens=2" %%c in ('echo %%b') do (
-		
-		    Rem | Echo the port.
-	        echo Local Port: "%%c"
-	    )
+        
+            Rem | Echo the port.
+            echo Local Port: "%%c"
+        )
     )
 )
 pause
