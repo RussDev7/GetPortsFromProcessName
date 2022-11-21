@@ -1,4 +1,4 @@
-# GetLocalApplicationAddress
+# GetPortsFromProcessName
 This is a very basic git project to show off the working code for gathering the netstat information of running windows processes.
 + Using this code, we can get the established local / foreign network address from an windows presses.
 
