@@ -15,7 +15,7 @@ namespace GetTerrariaLocalPort
         {
             if (TcpConnectionInfo.TryGetLocalPort(textBox1.Text, out ushort outPort) != 0)
             {
-                MessageBox.Show("ERROR: The " + outPort + " proccess was not found.");
+                MessageBox.Show(textBox1.Text + "'s Local Port Is: " + outPort.ToString());
             }
             else
             {
