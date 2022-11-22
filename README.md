@@ -1,8 +1,11 @@
 # GetPortsFromProcessName
-This is a very basic git project to show off the working code for gathering the netstat information of running windows processes.
-+ Using this code, we can get the established local / foreign network address from an windows presses.
+This git project is to show off a class for gathering the netstat information of running windows processes. The `TcpConnectionInfo.cs` class contains two useful functions: `TryGetLocalPort()` and `TryGetRemotePort()`.
 
-As for demo testing purposes, we can use a textbox to specify what process to check as shown bellow.
+Gather the following from established window processes:
++ `TryGetLocalPort()` - Finds the local port.
++ `TryGetRemotePort()` - Finds the remote port.
+
+As for demo testing purposes, this project is using a textbox to specify what process to check as shown bellow.
 
 ![save](https://user-images.githubusercontent.com/33048298/203162823-6d2fb933-1b92-4f13-9c96-613dac2e7cd9.PNG)
 
